@@ -7,7 +7,7 @@
 #include <cmath>
 
 int main() {
-	sf::RenderWindow game_window(sf::VideoMode(640, 480), "giocobello");
+	sf::RenderWindow game_window(sf::VideoMode(640, 480), "mygame");
 
 	sf::Texture texture;
 	texture.loadFromFile("img2.jpeg");
@@ -42,7 +42,6 @@ int main() {
 				case sf::Event::MouseButtonPressed:
 					auto coordinate = CubeCoord::from_pixel(event.mouseButton.x, event.mouseButton.y, radius);
 					std::cout << "q: " << coordinate.m_q << "\tr: " << coordinate.m_r << "\ts:" << coordinate.m_s << std::endl;
-					std::cout << "ciao" << std::endl;
 					map[coordinate].set_outline_thickness(10);
 					break;
 			}

@@ -1,6 +1,7 @@
 build
 game
 .vscode
+.ccls-cache
 
 # Prerequisites
 *.d
